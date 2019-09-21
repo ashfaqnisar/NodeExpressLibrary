@@ -1,0 +1,39 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "set DEBUG=app & nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "chalk": "^2.4.2",
+    "debug": "^4.1.1",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "jquery": "^3.4.1",
+    "morgan": "^1.9.1",
+    "popper.js": "^1.15.0",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": 2000,
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
